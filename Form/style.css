@@ -1,0 +1,134 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgb(243, 233, 233);
+  position: relative;
+  border-radius: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+form {
+  /* max-width: 400px; */
+  padding: 20px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-18 {
+  width: 18%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.form-item button {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  background: rgb(0, 119, 255);
+  border: none;
+}
+
+.form-item {
+  padding-top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+label {
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+
+input,
+select {
+  width: 60%;
+  height: 30px;
+}
+
+input {
+  border-radius: 13px;
+  border: none;
+}
+
+select {
+  border-radius: 13px;
+  border: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+#table-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: none;
+}
+
+
+
+#table-container {
+  overflow-x: auto;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dataTable th, #dataTable td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#dataTable th {
+  background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  #dataTable {
+    border: 0;
+  }
+  
+  #dataTable thead {
+    display: none;
+  }
+  
+  #dataTable tbody td {
+    display: block;
+    text-align: center;
+  }
+  
+  #dataTable tbody td:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  #dataTable tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+  }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-item d-flex flex-col">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name.." />
+        </div>
+        <div class="form-item d-flex flex-col">
+          <label for="age">Age:</label>
+          <input type="number" id="age" placeholder="Enter your age.." />
+        </div>
+        <div class="form-item d-flex flex-col">
+          <label for="dob">DOB:</label>
+          <input type="date" placeholder="Enter your DOB.." id="dob" />
+        </div>
+        <div class="form-item d-flex flex-col">
+          <label for="gender">Select your Gender:</label>
+          <select name="gender" id="gender">
+            <option value="none" selected hidden disabled>Your Gender..</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-item d-flex flex-col">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Enter your email.." id="email" />
+        </div>
+        <div class="form-item d-flex align-items-center">
+          <div class="d-flex flex-col w-100">
+            <label for="status">Status:</label>
+            <select name="status" id="status">
+              <option name="" id="" value="none" selected hidden disabled>
+                Select the status..
+              </option>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item d-flex align-items-center">
+          <button type="submit" class="w-100" id="submitBtn">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!--Table-->
+    <div id="table-container">
+      <table id="dataTable">
+        <tr>
+          <th id="serialNo">S No.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th id="actionDelEdit">Actions</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
